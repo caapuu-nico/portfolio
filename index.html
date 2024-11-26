@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="estilo.css"></link>
+</head>
+<body class="dark">
+    <!-- MENU  --->
+    <div class="contenedor-header">
+        <header>
+            <label class="switch" >
+                <input type="checkbox" id="input">
+                <span class="slider"></span>
+            </label>
+            <div class="logo">
+                <a href="#">Nicolas</a>
+            </div>
+            <nav id="nav" >
+                <ul>
+                    <li>
+                        <a href="#inicio" onclick="seleccionar()">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="#sobremi" onclick="seleccionar()">Sobre mi</a>
+                    </li>
+                    <li>
+                        <a href="#skills" onclick="seleccionar()">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#curriculum" onclick="seleccionar()">Curriculum vitae</a>
+                    </li>
+                    <li>
+                        <a href="#proyectos" onclick="seleccionar()">Proyectos</a>
+                    </li>
+                    <li>
+                        <a href="#contacto" onclick="seleccionar()">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()"> 
+                <i class="fa-solid fa-bars-staggered"></i>           
+            </div>
+        </header>
+    </div>
+    <!--HOME-->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="imgs/henry talent .jpg" alt="">
+            </div>
+            <h1>Nicolas Del Vecchio</h1>
+            <h2>Full Stack Developer - Experto en Back End</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/nicolas-del-vecchio-401a48195/"  target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/caapuu-nico" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.instagram.com/nico.delvecchio/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/nicolas.santiago.96/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-facebook"></i></a>
+            </div>
+        </div>
+    </section>
+    <!--SOBRE MI-->
+    <section id="sobremi" class="sobremi">
+        <div class="contenedor-sobremi">
+            <h2>Sobre Mi</h2>
+            <p><span>Hola soy Nicolas Del Vecchio</span>
+                , un apasionado desarrollador Full Stack con grandes expectativas y un fuerte deseo de impactar el mundo de la tecnología.
+                Recién inicio en este emocionante viaje, pero estoy lleno de energía y determinación para aprender, crecer y contribuir de manera significativa en el desarrollo de soluciones innovadoras. 
+                Mi objetivo es utilizar mis habilidades para crear productos tecnológicos que no solo sean funcionales, sino que también generen un impacto positivo en la vida de las personas y en la sociedad en su conjunto. 
+                ¡Estoy emocionado por lo que el futuro tiene reservado y listo para enfrentar cualquier desafío que se presente en este apasionante mundo de la tecnología!</p>
+            <div class="fila">
+                <!--datos personales-->
+                <div class="col">
+                    <h3>Datos personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            24/11/1994
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </li>
+                        <li>
+                            <strong>Telefono</strong>
+                            +54 011 15 7364-2629
+                            <i class="fa-brands fa-whatsapp"></i>
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            nnicou.s@gmail.com
+                            <i class="fa-solid fa-envelope"></i>
+                        </li>
+                        <li>
+                            <strong>Direccion</strong>
+                            Buenos Aires , Argentina
+                            <i class="fa-solid fa-location-dot"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!--intereses-->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        <div class="interes">
+                        <i class="fa-solid fa-film"></i>
+                        <span>PELICULAS</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <span>JUEGOS</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-futbol"></i>
+                         <span>DEPORTES</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-music"></i>            
+                         <span>MUSICA</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-car"></i>            
+                         <span>VIAJAR</span>
+                    </div>
+                    <div class="interes">
+                        <i class="fa-solid fa-utensils"></i>           
+                         <span>COCINAR</span>
+                    </div>
+                </div>
+                </div>
+            </div>
+                
+            <button>
+                <a href="file:///D:/Escritorio%20reinstalar/FULL.STACK.DEVELOPER%20ACT.pdf" download="Nicolas-cv" style="color: white; text-decoration-line: none;" target="_blank" rel="noreferrer noopener" >
+                 <h4>
+                    Descargar CV en español <i class="fa-solid fa-dowload"></i>
+                 </h4>  
+                </a>   
+                
+                    <span class="overlay"></span>
+                </button>
+                <button>
+                    <a href="file:///D:/Escritorio%20reinstalar/FULL.STACK.DEVELOPERINGLES.pdf" download="Nicolas-cv-english" style="color: white; text-decoration-line: none;" target="_blank" rel="noreferrer noopener">
+                        <h4>
+                            Descargar CV en ingles <i class="fa-solid fa-dowload"></i>
+                        </h4>
+                    </a>
+                    <span class="overlay"></span>
+                </button>
+        </div>
+    </section>
+    <!-- SKILLS-->
+    <section class="skills" id="skills">
+        <div class="contenido-skills">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!--TECHNICALS SKILLS-->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Node</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Express</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>SQL</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>MongoDb</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>React</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Redux</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>40%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Tailwind</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML Y CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>55%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--PROFRESIONAL SKILLS-->
+                <div class="col">
+                    <h3>Soft Skills</h3>
+                    <div class="skill">
+                        <span>Trabajo en equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Capacidad de comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Orientación al logro</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Identificación de oportunidades y resolución de problemas</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>62%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dominios de las nuevas Tecnologías (TIC)</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Capacidad analítica, pensamiento crítico</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Desarrollo de ideas y capacidad para innovar</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Adaptación o flexibilidad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>73%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CURRICULUM-->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                <h3>Educacion</h3>
+                    <div class="item izq">
+                        <h4>Bachiller en Ciencias Economicas</h4>
+                        <span class="lugar">E.S.B n° 9 "Fragata Sarmiento"</span>
+                        <span class="fecha">2010-2019</span>
+                        <p> Finalizacion de educación secundaria en un programa de bachillerato para adultos, con especialización en economía,
+                            representa no solo el cumplimiento de un objetivo personal, sino también el inicio de una nueva etapa llena de oportunidades.
+                                                    </p>
+                              <div class="conectori">
+                                <div class="circuloi">                       
+                                </div>
+                              </div>                             
+                    </div>
+                    <div class="item izq">
+                        <h4>Full Stack Developer</h4>
+                        <span class="lugar">Henry Bootcamp</span>
+                        <span class="fecha">2022-2023</span>
+                        <p>Me titulé tras completar 800 horas de teoría y práctica en un bootcamp de desarrollo. Participé en actividades como tareas, clases teóricas y colaboración en grupos para resolver dudas y proyectos individuales y grupales. Aprendí el desarrollo de tecnologías desde su lógica hasta su implementación práctica, incluyendo clientes y servidores, con proyectos detallados desde su concepción hasta su actualización más reciente. Ahora estoy preparado para abordar diversas tareas de desarrollo con entregas de proyectos tanto individuales como grupales utilizando las tecnologías aprendidas en el bootcamp.
+                              </p>
+                              <div class="conectori">
+                                <div class="circuloi">                       
+                                </div>
+                              </div>                             
+                    </div>
+                    <div class="item izq">
+                        <h4>Bartender</h4>
+                        <span class="lugar">I.G.A Instituto Gastronomica de Argentina</span>
+                        <span class="fecha">2020</span>
+                        <p>Completé con éxito un curso intensivo de bartender y barman en el Instituto Gastronómico de Argentina, donde adquirí habilidades en mixología, servicio de bar y gestión de inventario.
+                             A través de clases prácticas y teóricas, aprendí a preparar una amplia variedad de cócteles clásicos y contemporáneos, así como a proporcionar un servicio de alta calidad a los clientes.
+                              Este curso me proporcionó las habilidades necesarias para trabajar de manera profesional en la industria gastronomica.</p>
+                              <div class="conectori">
+                                <div class="circuloi">                       
+                                </div>
+                              </div>                             
+                    </div>
+                    <div class="item izq">
+                        <h4>Java Developer</h4>
+                        <span class="lugar">Edutin Academy</span>
+                        <span class="fecha">2024</span>
+                        <p>Durante este curso, he dedicado un total de 280 horas de estudio para adquirir los conocimientos y habilidades necesarios para convertirme en un desarrollador Java competente y capaz de enfrentar retos reales en el mundo de la programación.
+
+                            En particular, uno de los proyectos clave que desarrollé durante el curso fue un CRM (Customer Relationship Management) para una farmacia, utilizando Workbench y MySQL. Este proyecto me permitió aplicar todo lo aprendido sobre Java y bases de datos en un entorno práctico. Desde la creación de la base de datos hasta el desarrollo de la lógica del sistema, pude trabajar en cada aspecto del CRM, optimizando la gestión de clientes y mejorando la eficiencia operativa para un entorno comercial real.</p>
+                              <div class="conectori">
+                                <div class="circuloi">                       
+                                </div>
+                              </div>                             
+                    </div>
+                </div>
+                <div class="col derecha">
+                    <h3>Experiencia laboral - Proyectos</h3>
+                        <div class="item der">
+                            <h4>Full Stack Developer - "Countries" Individual Project </h4>
+                            <span class="lugar">soyHenry Bootcamp</span>
+                            <span class="fecha">2023</span>
+                            <a href="https://github.com/caapuu-nico/CountriesProyectoHenry/blob/main/countries%20pi/README.md" target="_blank" rel="noreferrer noopener" style=" font-size: 30px; color: rgb(19, 13, 13) ;text-decoration-line: none"><i class="fa-brands fa-github"></i></a>
+                            <p>Desarrollé una aplicación de gestión de países utilizando tecnologías como JavaScript, React, Redux, Express, Sequelize, PostgreSQL, CSS y HTML, aplicando lo aprendido durante mi bootcamp en Henry.
+                                 Utilicé Sequelize para crear tablas SQL y modelos de países y actividades, implementando rutas en Express.js para consultas a la base de datos y manejo de errores. En la parte frontend, construí componentes en React para la Landing Page, Home, Detail y Formulario de creación, utilizando React-Redux para consultas al servidor y permitiendo búsqueda, 
+                                 filtros y creación de nuevas actividades. Además, realicé la implementación del diseño utilizando CSS puro para darle un aspecto visual detallado
+                                  a la aplicación. Esta experiencia me permitió demostrar mis habilidades de desarrollo de forma individual y obtener un resultado exitoso tanto en funcionalidad como en diseño. 🚀</p>
+                                  <div class="conectord">
+                                    <div class="circulod">                       
+                                    </div>
+                                  </div>                             
+                        </div>
+                        <div class="item der">
+                            <h4>Full Stack Developer - "C.R.U.D" Individual Project </h4>
+                            <span class="lugar"></span>
+                            <span class="fecha">2024</span>
+                            <a href="https://github.com/caapuu-nico/fomula1" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github" style=" font-size: 30px; color: rgb(19, 13, 13) ;text-decoration-line: none"></i></a>
+                            <p>Proyecto C.R.U.D utilizando MongoDB, Mongoose, Express, Node.js, React y Tailwind CSS Este proyecto es un ejemplo de una aplicación web que implementa las operaciones básicas de Crear, Leer, Actualizar y Eliminar (C.R.U.D) utilizando tecnologías como MongoDB, Mongoose, Express y Node.js en el backend, y React con Tailwind CSS en el frontend. 
+                                Además, se incluye un sistema de autenticación de usuarios con JWT y validación de datos utilizando Zod.</p>
+                                  <div class="conectord">
+                                    <div class="circulod">                       
+                                    </div>
+                                  </div>                             
+                        </div>
+                        <div class="item der">
+                            <h4>Full Stack Developer - "ProjUnity" Grupal Project</h4>
+                            <span class="lugar">soyHenry Bootcamp</span>
+                            <span class="fecha">2023</span>
+                            <a href="https://github.com/jhosnodev/projUnity" target="_blank" rel="noreferrer noopener" style="font-size: 30px; color: rgb(19, 13, 13) ;text-decoration-line: none"><i class="fa-brands fa-github"></i></a>
+                            <p>Colaboré en el desarrollo de una plataforma colaborativa para desarrolladores freelance, asumiendo la responsabilidad del servidor y la base de datos con Sequelize, Node.js y Express.js. Modularicé rutas, modelos y relaciones, facilitando la interacción entre usuarios y comentarios, y gestionando consultas y respuestas hacia el cliente. Implementé una pasarela de pagos con MercadoPago, manejando órdenes y consultas de pago. Destaco mi habilidad para trabajar en equipo, contribuyendo al éxito de un proyecto completo con autenticación de usuarios, notificaciones, pasarela de compras y paneles de administración.
+                                 Participé activamente en múltiples sprints, colaborando con el equipo para poner en marcha el proyecto. 🚀</p>
+                                  <div class="conectord">
+                                    <div class="circulod">                       
+                                    </div>
+                                  </div>                             
+                        </div>
+                        <div class="item der">
+                            <h4>Operador de ventas</h4>
+                            <span class="lugar">C.A.T Technologies S.A</span>
+                            <span class="fecha">Actual</span>
+                            <p>Como operador y vendedor encargado en ventas y gestión de servicios de internet, telefonía y televisión para Telecom, adquirí experiencia en el manejo de diversos softwares empresariales, facturación y resolución de problemas para clientes en todo el país. Utilicé CRM como Salesforce, Siebel, Open y Yoizen para gestionar relaciones con clientes y mejorar la eficiencia en las ventas. Actualmente, me desempeño en la venta de servicios a través de WhatsApp, aplicando mi experiencia en atención al cliente y ventas para brindar soluciones personalizadas.</p>
+                                  <div class="conectord">
+                                    <div class="circulod">                       
+                                    </div>
+                                  </div>                             
+                        </div>
+                        <div class="item der">
+                            <h4>Bartender</h4>
+                            <span class="lugar"> Shawarma bar y La Mansion</span>
+                            <span class="fecha">2021</span>
+                            <p>Como bartender, tuve la oportunidad de trabajar en dos establecimientos distintos: Shawarma Bar y La Mansion Bar. Durante mi tiempo en estos lugares, no solo adquirí habilidades en preparación y servicio de bebidas, sino que también pude desarrollar mi propio trago de autor, destacando mi creatividad y habilidad para innovar en el mundo de la mixología. En ambos lugares, 
+                                me enfoqué en ofrecer una experiencia excepcional a los clientes, brindando un servicio amable y profesional 
+                                mientras contribuía al ambiente acogedor del bar.</p>
+                                  <div class="conectord">
+                                    <div class="circulod">                       
+                                    </div>
+                                  </div>                             
+                        </div>
+                        <div class="item der">
+                            <h4>Operario</h4>
+                            <span class="lugar">La Anonima Logistica</span>
+                            <span class="fecha">2019</span>
+                            <p>Me desempeñé como operario en logística, siendo responsable del control y ordenamiento de la mercadería en la cámara de alimentos fríos. Durante mi tiempo en este rol, gestioné eficientemente el flujo de productos que se distribuían a diferentes destinos en el sur de Argentina. Mi labor garantizó que la mercadería estuviera correctamente almacenada y lista para su envío,
+                                 contribuyendo así al cumplimiento de los plazos de entrega y la satisfacción del cliente..</p>
+                                  <div class="conectord">
+                                    <div class="circulod">                       
+                                    </div>
+                                  </div>                             
+                        </div>
+                        <div class="item der">
+                            <h4>Chofer de remis</h4>
+                            <span class="lugar">Uber y Didi</span>
+                            <span class="fecha">2018-2021</span>
+                            <p>Trabajé como chofer de remis para las aplicaciones Uber y Didi. proporcione viajes seguros, cómodos y confiables para los pasajeros, garantizando un excelente servicio al cliente.
+                                 Mi habilidad para navegar seguro por la ciudad de Buenos Aires, AMBA
+                                y mi atención al detalle contribuyeron a ofrecer una experiencia de viaje positiva para los usuarios de las aplicaciones.
+                            </p>
+                                  <div class="conectord">
+                                    <div class="circulod">                       
+                                    </div>
+                                  </div>                             
+                        </div>
+                        <div class="item der">
+                            <h4>Encargado</h4>
+                            <span class="lugar">Oeste Refrigeracion</span>
+                            <span class="fecha">2012-2018</span>
+                            <p>
+                                En Oeste Refrigeración, un negocio familiar, utilice roles duales como encargado y cadete. En calidad de encargado, supervisé las operaciones diarias del negocio, incluyendo atención al cliente, gestión de inventario y coordinación de entregas. Además, como cadete, me encargué de la distribución eficiente de productos a los clientes, garantizando entregas puntuales y satisfactorias.
+                                 Mi experiencia en este entorno familiar me permitió desarrollar tanto en la gestión empresarial como en el servicio al cliente, contribuyendo al servicio general del negocio.
+                            </p>
+                                  <div class="conectord">
+                                    <div class="circulod">                       
+                                    </div>
+                                  </div>                             
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <!--PORTFOLIO-->
+    <section class="portfolio" id="proyectos">
+        <div class="contenido">
+            <h2>Proyectos</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="imgs/portfolio projunity.jpg">
+                    <div class="overlay">
+                        <h3>ProjUnity</h3>
+                        <p>Proyecto Final Henry</p>
+                        <ul>
+                            <i class="fa-brands fa-js"></i> 
+                            <i class="fa-brands fa-node"></i>
+                            <i class="fa-solid fa-database"></i>
+                            <i class="fa-brands fa-react"></i>
+                        </ul>
+                        <h4>
+                            <a href="https://github.com/jhosnodev/projUnity" target="_blank" rel="noreferrer noopener" style="color: rgb(19, 13, 13) ;text-decoration-line: none"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://proj-unity.vercel.app/" target="_blank" rel="noreferrer noopener" style="color: rgb(19, 13, 13) ;text-decoration-line: none"><i class="fa-solid fa-earth-americas"></i></a>
+                        </h4>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imgs/countries portfolio.png" alt="">
+                    <div class="overlay" >
+                        <h3>Countries</h3>
+                        <p>Proyecto individual Henry</p>
+                        <ul>                         
+                                <i class="fa-brands fa-js"></i> 
+                                <i class="fa-brands fa-node"></i>
+                                <i class="fa-solid fa-database"></i>
+                                <i class="fa-brands fa-react"></i>
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>     
+                        </ul>       
+                        <h4>
+                            <a href="https://github.com/caapuu-nico/CountriesProyectoHenry/blob/main/countries%20pi/README.md" target="_blank" rel="noreferrer noopener" style="color: rgb(19, 13, 13) ;text-decoration-line: none"><i class="fa-brands fa-github"></i></a>
+                            <!-- <a href="https://proj-unity.vercel.app/" target="_blank" rel="noreferrer noopener"><i class="fa-solid fa-earth-americas"></i></a> -->
+                        </h4>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="imgs/crudfinal.jpg" alt="">
+                    <div class="overlay">
+                        <h3>C.R.U.D</h3>
+                        <p>Create Response Update and Delete tasks</p>
+                        <ul>                         
+                            <i class="fa-brands fa-js"></i> 
+                            <i class="fa-brands fa-node"></i>
+                            <i class="fa-solid fa-database"></i>
+                            <i class="fa-brands fa-react"></i>
+                            <i class="fa-brands fa-html5"></i>
+                            <i class="fa-brands fa-css3-alt"></i>     
+                    </ul>  
+                        <h4>
+                            <a href="https://github.com/caapuu-nico/fomula1" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github" style="color: rgb(19, 13, 13) ;text-decoration-line: none"></i></a>
+                           </h4>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--CONTACTO-->
+    <section id="contacto" class="contacto">
+        <div class="contenido">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <!--FORMULARIO-->
+                <div class="col">
+                    <input type="text" placeholder="Tu nombre">
+                    <input type="text" placeholder="Numero telefonico">
+                    <input type="text" placeholder="Direccion de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>Enviar mensaje
+                        <i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!--MAPA-->
+                <div class="col">
+                    <img src="/imgs/google-maps-22.jpg" alt="">
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-pin"></i>
+                               Casacuberta 1029 Castelar Buenos Aires
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-phone"></i>
+                               +54 011 15 7364-2629
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                               nnicou.s@gmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+   <footer>
+    <a href="#inicio" class="arriba">
+        <i class="fa-solid fa-caret-up"></i>
+    </a>
+    <div class="redes">
+        <a href="https://www.linkedin.com/in/nicolas-del-vecchio-401a48195/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="https://github.com/caapuu-nico" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.instagram.com/nico.delvecchio/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/nicolas.santiago.96/" target="_blank" rel="noreferrer noopener"><i class="fa-brands fa-facebook"></i></a>
+    </div>
+   </footer>
+   <script src="script.js"></script>
+</body>
+</html>
+
+
+                
+              
+                
+                
